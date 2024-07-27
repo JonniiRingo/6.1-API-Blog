@@ -64,7 +64,7 @@ app.post("/posts", (req, res) => {
     title: req.body.title,
     content: req.body.content,
     author: req.body.author,
-    date: newDate(),
+    date: new Date(),
   }; 
   lastId = newId;
   posts.push(post);
